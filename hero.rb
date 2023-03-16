@@ -13,7 +13,7 @@ class Hero
   end
 
   def power_down
-    @helath -= 10
+    @helath = @health - 10
   end
 
   def hero_info
@@ -24,6 +24,7 @@ end
 =begin
 hero = Hero.new 'mike'
 puts hero.name
+puts hero.power_down
 puts hero.power_up
 puts hero.hero_info
 =end
